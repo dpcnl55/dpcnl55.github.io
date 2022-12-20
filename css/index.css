@@ -1,0 +1,191 @@
+/* common */
+* {
+    margin: 0; padding: 0;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: inherit;
+    background-color: #000;
+    color: #fff;
+}
+
+.display_none {
+    display: none;
+} 
+
+ul {list-style: none;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1,h2,h3,h4,h5,h6,b {
+    font-weight: normal;
+}
+
+.allWrap {
+    width: 1420px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+b,span {
+    color: #CFFF04;
+}
+
+header {
+    border-bottom: 1.5px solid #CFFF04;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+
+header ul {
+    display: flex;
+    width: 460px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.page_section {
+    height: 800px;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.section_title {
+    font-size: 32px;
+    border-bottom: 1.5px solid #CFFF04;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.section_content {
+    height: 100%;
+}
+.intro_section {
+    padding-top: 0px;
+    height: 870px;
+}
+
+.works_section {
+    height: auto;
+}
+
+.intro_section .section_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+    margin: auto;
+
+}
+
+.intro_section .section_content p, .intro_section .section_content b {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.about {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.typo {
+    padding-right: 250px;
+}
+
+.about .typo h2,.about .typo b{
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.about .text p:first-of-type{
+    margin-bottom: 20px;
+}
+
+
+/* work section */
+
+.works_category_header {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 200;
+    border-bottom: 1.5px solid white;
+}
+
+
+.works_category_title {
+    font-weight: 100;
+    font-family: "Noto Sans KR";
+}
+
+.works_list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.works_list .works_item {
+    width: 460px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+   
+}
+
+.works_list .works_item img {
+    width: 460px;
+    height: 460px;
+    background-color: #171717;
+}
+
+.works_item>div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_box {
+    width: 700px;
+    height: 365px;
+    background-color: #CFFF04;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_box table {
+    border-collapse: collapse;
+}
+table tr td{
+    background-color: #CFFF04;
+    padding: 8px;
+    color: #414141;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+footer {
+    height: 180px;
+    width: 100%;
+    background: url(./images/books.jpg) no-repeat 0 -400px;
+
+}
