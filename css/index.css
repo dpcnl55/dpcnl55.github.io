@@ -186,6 +186,6 @@ table tr td{
 footer {
     height: 180px;
     width: 100%;
-    background: url(./images/books.jpg) no-repeat 0 -400px;
+    background: url(../images/books.jpg) no-repeat 0 -400px;
 
 }
