@@ -69,6 +69,7 @@ header ul {
 .intro_section {
     padding-top: 0px;
     height: 870px;
+    position: relative;
 }
 
 .works_section {
@@ -111,11 +112,29 @@ header ul {
     margin-bottom: 20px;
 }
 
+.section_content a {
+    position: absolute;
+    top: 84%;
+    right: 23%;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid white;
+}
+
+.section_content a img{
+    scale: 0.4;
+    position: absolute;
+    top: -3%;
+    right: -41%;
+}
+
+
+
 
 /* work section */
 
 .works_category_header {
-    height: 140px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,17 +157,19 @@ header ul {
 }
 
 .works_list .works_item {
-    width: 460px;
+    width: 450px;
     margin-bottom: 30px;
     margin-top: 60px;
-   
+    font-size: 17px;
 }
 
 .works_list .works_item img {
-    width: 460px;
-    height: 460px;
+    width: 450px;
+    height: 450px;
     background-color: #171717;
 }
+
+
 
 .works_item>div {
     display: flex;
