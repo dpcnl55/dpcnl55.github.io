@@ -1,0 +1,1219 @@
+@media (min-width:769px){
+
+  
+  *{margin:0;padding:0;}
+  ul,ol{list-style:none;}
+  a{text-decoration:none;color:inherit;}
+  h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:inherit;}
+  address,i,em{font-style:normal;}
+  b,strong{font-weight:normal;}
+  table{border-collapse:collapse;}
+
+  html{
+    font-size:15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #191919;
+  }
+
+  .home_wrap{
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  /* common */
+  .corp_contents_wrap, .individual_product_all_wrap, .news_content_wrap{
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 120px;
+  }
+
+  /* pc Header */
+  .mo_wrap{
+    display: none;
+  }
+
+  header.pc_header{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    align-content: center;
+  }
+
+  header.pc_header:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 90px;
+      width: 100%;
+      height: 0px;
+      background: rgba(236,236,236,0.9);
+      transition: all 0.5s ease 0s;
+      z-index: 50;
+    }
+    header.pc_header:hover:before{
+      height: 130px;
+    }
+
+  .main_banner img{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  header>.pc_gnb>ul{
+    display: flex;
+  }
+
+  header.pc_header .logo{
+    padding-top: 15px;
+  }
+  .pc_gnb {
+    z-index: 50;
+  }
+
+
+  .pc_gnb>ul{
+    height: 93px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .pc_gnb>ul>li {
+    margin-right: 130px;
+    display: flex;
+    align-items: center;
+    padding:10px 0;
+    position: relative;
+    transition: all 0.5s ease 0s;
+  }
+
+  .pc_gnb ul li .menu_item:before{
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: 20px;
+    width: calc(100% + 2px);
+    height: 2px;
+    background-color: rgba(254, 140, 2, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .pc_gnb ul li:hover .menu_item::before{
+    transform: scaleX(1);
+  }
+
+  .pc_gnb>ul>li:last-of-type{
+    margin-right: 0;
+  }
+
+  .pc_gnb>ul>li>ul{
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    display: flex;
+    display: none;
+    padding: 10px 0px;
+  }
+  .pc_gnb>ul>li>ul>li{
+    padding-bottom: 15px;
+    color: #191919;
+  }
+
+  .pc_gnb>ul:hover>li>ul{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 200px;
+  }
+
+  .main_banner{
+    position: relative;
+    top: 0px;
+  }
+
+  /* main contents */
+  .content_summary .summary_container{
+    margin-top: 105px;
+    float: left;
+    width: 33%;
+    height: 180px;
+    box-sizing: border-box;
+  }
+
+  .content_summary ul:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .content_summary li{
+    border-left: 1.5px solid #e0e0e0;
+  }
+
+  .content_summary li:last-of-type{
+    border-right: 1.5px solid #e0e0e0;
+  }
+
+  .summary_container{
+    padding-left: 62px;
+    margin-bottom: 130px;
+  }
+  .summary_container h3{font-size: 19px; font-weight: 500; padding-top: 5px;margin-bottom: 40px;}
+
+  .container_box{
+    font-size: 20px; margin-bottom: 28px;
+  }
+
+  .summary_container a{
+    color: #444;
+    width: 40%;
+    display: block;
+  }
+
+  .summary_container a img{padding-left: 10px;}
+
+  /* 제품slider부분 */
+  .slider{
+    margin-bottom: 205px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .controler{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateY(-50%)translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .controler .button_pre{
+    transform:rotate(180deg);
+  }
+
+  .slider .sec_title{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .slider ul{
+    display: flex;
+  }
+
+  .slider ul li{margin-left: 42px;}
+
+  .slider .img_box{
+    width: 248px;
+    height: 248px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 32px;
+  }
+
+  .slider .txt_box{
+    display: block;
+    width: 248px;
+    height: 42px;
+    border-radius: 21px;
+    background: #fefcf5;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .slider_box>li:hover .txt_box{
+    background: #ff6d00;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .slider .txt_box span{
+    line-height: 42px;
+  }
+
+  .slider .img_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider_box>li:hover .img_box{
+    background: #efe4db;
+  }
+
+  .slider .img_box img{
+    width: 90px;
+    height:220px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* 메인- 국순당 술의 특징 */
+  .box{
+    width: 90%;
+    border-radius: 50px;
+    height: 800px;
+    margin: auto;
+    background: url(../img/main_box1.png) no-repeat 0px -150px;
+    background-size: cover;
+    margin-bottom: 244px;
+  }
+
+  .color_box{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height:100%;
+    border-radius: 50px;
+    color: #fff;
+    position: relative;
+  }
+
+  .color_txt_box{
+    position: absolute;
+    top: 520px;
+    left: 70px;
+    font-size: 20px;
+  }
+
+  .box .color_box h3,.qna_box_wrap h3{
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .box p{
+    letter-spacing: -1px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    word-break: keep-all;
+  }
+
+  /* 메인 고객 안내 박스*/
+  .qna_box_wrap{
+    width: 100%;
+    height: 750px;
+  }
+
+  .qna_box_wrap h3{text-align: center;}
+  .qna_box{
+    height: 590px;
+      /* position: relative; */
+    padding: 60px 45px;
+    border-radius: 48px;
+    box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
+    background-color: #fff;
+    margin-bottom: 132px;
+  }
+  .counsel_box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 48px;
+  }
+  .counsel_box h4{
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .email_box,.phone_box{
+    position: relative;
+    /* display: block; */
+    width: 40%;
+    height: 250px;
+    padding: 30px 45px;
+    border-radius: 30px;
+    background: #fefcf5;
+  }
+  .email_box{
+    background-image: url(../img/letter.png);
+    background-repeat: no-repeat;
+    background-position: 95% 100px;
+  }
+  .phone_box{
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: 95% 100px;
+  }
+  .counsel_box p{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .counsel_box .view_more_bt{
+    position: absolute;
+    background: #a3a09f;
+    color: #fff;
+    bottom: 50px;
+    left: 45px;
+    width: 160px;
+    height: 43px;
+    border-radius: 21.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .view_more_bt:hover{
+    background: #ff6d00;
+  }
+  .phone_box p:nth-of-type(2){
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .qna_box .qna_list_tit{
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-left: 45px;
+  }
+
+  .qna_list ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 168px;
+  }
+  .qna_list ul li{
+    width: 46%;
+    height: 72px;
+    border-radius: 32px;
+    background: #f9f9f9;
+    box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+  .qna_list ul li a{
+    display: block;
+    width: 100%;
+  }
+
+  .qna_list ul li:hover a{
+    font-weight: 500;
+  }
+
+
+  /* footer */
+  footer{
+    width: 100%;
+    height: 270px;
+    background: #f5e9ca;
+    padding-top: 50px;
+    margin-top: 230px;
+  }
+
+  .foot_con{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .footer_box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_box ul{
+    display: flex;
+  }
+  .footer_box ul li{
+    padding-right: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+  }
+
+  .foot_con .ad{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 100px;
+  }
+
+  /* 서브페이지 상단 타이틀 공통 스타일 */
+
+  .corp_nav ul,.story_nav ul,.ind_pro_nav ul{
+    display: flex;
+    background: url(../img/title_arrow1.png) no-repeat 26px 45%;
+    margin-bottom: 10px;
+  }
+  .corp_nav ul li,.story_nav ul li,.ind_pro_nav ul li{
+    padding-right: 24px;
+  }
+
+  .page_title h3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 54px;
+    color: #191919;
+  }
+
+  .corp_nav,.story_nav,.ind_pro_nav ul li:last-of-type{
+    color: #a4a4a4;
+    font-size: 14px;
+  }
+
+  /* 서브페이지1 회사소개 */
+  .brand_con1{
+    width: 100%;
+    height: 737px;
+    margin: 0 auto;
+    border-radius: 48px;
+    background: url(../img/corp1.jpg) no-repeat 40% 40%;
+    position: relative;
+  }
+
+  .brand_con1_color{
+    content: "";
+    width: 100%;
+    height: 737px;
+    margin: 0 auto;
+    border-radius: 48px;
+    background: rgba(0,0,0,0.7);
+  }
+
+  .brand_con1 h4{
+    position: absolute;
+    top:285px;
+    /* left:542px; */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .brand_con1 p{
+    position: absolute;
+    top:335px;
+    left:50%;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+
+  .brand_con2 h4{
+    display: block;
+    margin-top: 240px;
+    font-size: 42px;
+    line-height: 62px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 57px;
+    font-weight: bold;
+  }
+  .brand_con2 p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 276px;
+  }
+
+  .brand_box{
+    width: 90%;
+    height: 610px;
+    border-radius: 48px;
+    box-shadow: 2px 5px 40px 0 rgb(0 0 0 / 9%);
+    margin-bottom: 80px;
+    margin: 80px auto;
+    display: flex;
+    transition: all 0.5s ease 0s;
+  }
+
+  .brand_box>div{
+    flex:1;
+  }
+  .brand_box img{transition:all 0.5s ease 0s;}
+  .brand_box:hover img{
+    transform: scale(1.1);
+  }
+  .wrap_img{
+      overflow: hidden;
+      border-radius: 0 50px 50px 0;
+  }
+  .wrap_img2{
+    overflow: hidden;
+    border-radius: 50px 0 0 50px;
+  }
+
+  .wrap_img2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 48px 0 0 48px;
+  }
+  .wrap_img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 48px 48px 0;
+  }
+
+  .wrap_cont{
+    padding-top:100px;
+    padding-left: 95px;
+  }
+
+  .wrap_cont .cont_title{
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: -1px;
+  }
+  .con3_left h4{
+    margin-bottom: 160px;
+  }
+  .con4_right h4{
+    margin-bottom: 130px;
+  }
+  .con5_left h4{
+    margin-bottom: 70px;
+  }
+  .cont_txt{
+    line-height: 1.7;
+  }
+  .wrap_tag{
+    padding-top: 25px;
+    width: 80%;
+    display: flex;
+  }
+  .wrap_tag .txt_tag{
+    padding-right: 15px;
+    color: #767676;
+  }
+
+  /* 서브페이지2 _ 우리술 이야기 */
+  .story_cont_wrap{
+    margin: 0 auto;
+    width: 1310px;
+    padding-top: 120px;
+  }
+
+  .story_button{
+  margin-top: 40px;
+  display: flex;
+  }
+  .story_button button{
+    width: 180px;
+    height: 45px;
+    border-radius: 22.5px;
+    background: rgba(121, 121, 121, 0.04);
+    box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 5%);
+    border: none;
+    margin-right: 27px;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 100px;
+  }
+
+  .story_button button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .story_button button:first-of-type{
+    background: #ff6d00;
+    color: white;
+    font-weight: 400;
+  }
+
+  button:hover{
+    background: #ff6d00;
+    color: white;
+    font-weight: 400;
+  }
+
+  .story_info_title{
+    width: 100%;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 10px 0.9px rgb(0 0 0 / 5%);
+    border-radius: 30px;
+    margin-bottom: 86px;
+  }
+
+  .story_info_title h3{
+    font-size: 17px;
+    color: #ff6d00;
+    margin-bottom: 15px;
+  }
+
+  .story_info_title p{
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .story_info_con{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .story_info{
+    width: 47%;
+    height: 920px;
+    border-radius: 38px;
+    box-shadow: 0px 3px 10px 0.9px rgb(0 0 0 / 5%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .story_info_img{
+    width: 100%;
+  }
+  .story_info_img img{
+    object-fit: cover;
+    height: 550px;
+    width: 100%;
+    border-radius: 38px 38px 0 0;
+  }
+  .story_info h4{
+    font-size: 36px;
+    margin-top: 72px;
+    margin-bottom: 54px;
+    font-weight: bold;
+  }
+  .story_info p{
+    width: 430px;
+    line-height: 1.7;
+  }
+
+  /* 국순당이 복원한 우리술 */
+  .scroll_wrap{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 250px 0;
+    height: 920px;
+    display: flex;
+    border-radius: 38px;
+    box-shadow: 0px 3px 10px 0.9px rgb(0 0 0 / 5%);
+  }
+  .scroll_right{
+    position: relative;
+  }
+  .story_controler{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+  }
+  .story_controler .story_controler_on{
+    width: 15px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #ff6d00;
+  }
+
+  .story_controler li{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bcbab8;
+    margin-bottom: 13px;
+  }
+  .story_controler li:last-of-type{
+    margin-bottom: 0;
+  }
+
+  .scroll_wrap div{
+    flex:1;
+  }
+
+  ul.scroll_list {
+    height: 826px;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  .scroll_left{
+    background: #f9f9f9;
+    border-radius: 38px 0 0 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+  }
+  .scroll_left h2{
+    font-size:36px;
+    font-weight: bold;
+    padding-left: 74px;
+    /* margin-left: 80px; */
+  }
+
+  .scroll_left p{
+    font-size: 110px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 74px;
+    color: #ff6d00;
+  }
+
+  .scroll_right>*{
+    padding-left: 93px;
+    color: #8e8e8e;
+  }
+  .scroll_right .scroll_list{
+    margin: 32px 0;
+  }
+
+  .scroll_list_tit{
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .scroll_list li{
+    margin-bottom: 70px;
+  }
+  .scroll_list li p{
+    font-size: 18px;
+  }
+  .scroll_on p{
+    color: #191919;
+  }
+
+  .scroll_on .scroll_list_tit_on{
+    color: #191919;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .scroll_list_tit_on b{
+    color: #ff6d00;
+  }
+
+  /* 국순당 술의 특징 */
+
+  .pro_info_box_wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .product_info_box{
+    width: 401px;
+    height: 520px;
+    border: 1.5px solid #ececee;
+    box-sizing: border-box;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .product_info_box img{
+    width: 377px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+
+  .product_info_box h4{
+    font-size: 24px;
+    padding: 27px 0;
+    margin-left: 40px;
+  }
+
+  .product_info_box p{
+    line-height: 1.8;
+    width: 80%;
+    word-wrap: normal;
+    margin-left: 40px;
+  }
+
+
+  /* 서브페이지3_ 개별 제품 소개 페이지 */
+
+
+  /* 개별 제품 소개 슬라이더  */
+  .ind_slider_wrap {
+    border: 1px solid #ececee;
+    border-radius: 27px;
+    padding:0 10px;
+    height: 468px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 225px;
+  }
+
+  .ind_slider_wrap .slider{
+    margin: 0;
+  }
+
+  .ind_slider_wrap .slider p{
+    text-align: center;
+    font-size: 21px;
+    padding: 35px;
+  }
+
+  .ind_slider_wrap .controler {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translateY(-50%)translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .ind_slider_wrap .slider ul li {
+      margin-left: 38px;
+  }
+
+  /* 제품소개 카드 */
+  /* 백세주 브랜드 스토리 카드 */
+  .product_info_card_wrap>h4{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .card100{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    width: 100%;
+    height: 610px;
+    border: 1px solid #ececee;
+    margin-bottom: 110px;
+    border-radius: 28px;
+  }
+  .product_100_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px 0 0 28px;
+  }
+  .product_100_right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 60px 50px 50px 50px;
+  }
+
+  .list_title_100{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+  }
+  .list_100>li:first-of-type{
+    border-top: 1.5px solid #191919;
+  }
+  .list_100>li:last-of-type{
+    border-bottom: 1.5px solid #191919;
+  }
+
+  .list_title_100>span{
+    border: 1.7px solid #ff8b04;
+    color: #ff8b04;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 17px;
+  }
+  .list_act {
+      height: 100px;
+      background: #f9f9f9;
+      border-bottom: 1px solid #e4e4e4;
+      word-break: keep-all;
+      transition: all 0.5s ease 0s;
+      height: 0;
+      overflow: hidden;
+      padding: 0px 50px;
+  }
+  .list_100>li.on>.list_act{
+    height:100px;
+    padding: 25px 50px;
+  }
+  .list_title_100 img{
+    position: absolute;
+    display: block;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 15px;
+    height: 8px;
+    transition: all .5s ease;
+  }
+
+
+  /* 개별 제품 소개 카드 */
+
+  .product_info_card{
+    width: 100%;
+    height: 610px;
+    border: 1px solid #ececee;
+    margin-bottom: 110px;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product_img_wrap{
+    box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 6%);
+    background: #f9f9f9;
+    border-radius: 30px;
+    width: 445px;
+    height: 460px;
+    margin-right:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product_info_card .product_info_card_cont{
+    width: 558px;
+    height: 459px;
+  }
+  .product_info_card_cont h2{
+    font-size: 39px;
+    font-weight: 300;
+  }
+  .product_info_card_txt{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-bottom: 1px solid #c1c1c1;
+    height: 265px;
+  }
+
+  .product_info_card_txt>h2{
+    flex: 1.5;
+  }
+  .product_info_card_txt>p{
+    margin-bottom: 25px;
+    width: 95%;
+    line-height: 1.8;
+  }
+  .product_detail_info{
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+  .product_detail_info td{
+    vertical-align:top;
+    padding:7px 0;
+  }
+  .product_detail_info tr td:first-of-type{
+    width: 55px;
+    font-weight: 500;
+  }
+  .product_detail_info .ingredients{
+    /* padding-top: 20px; */
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+  .size_control{
+    height: 85%;
+  }
+
+  /* 공지사항 페이지 */
+  .news_content_box{
+    padding: 25px 30px 0;
+    border: 1px solid rgba(31, 31, 31, 0.1);
+    border-radius: 30px;
+  }
+  .news_content_box table{
+    width: 100%;
+    font-size: 19px;
+  }
+  .news_content_box table tr{
+    height: 74px;
+    border-bottom: 1px solid #ececee;
+  }
+  .news_content_box table tr td:first-of-type{
+    width: 12%;
+    padding-left: 25px;
+  }
+  .news_content_box table tr td:nth-of-type(2){
+    padding-left: 40px;
+  }
+
+  .answer_title{
+    padding-top: 15px;
+  }
+  .answer{
+    margin-top: 5px;
+    border:1px solid white;
+    overflow: hidden;
+    height: 0px;
+    transition: all .5s ease 0s;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .answer.on {
+    height: 130px;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+
+  .news_table_title{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .news_table_title td:nth-of-type(2){
+    text-align: center;
+  }
+  .news_table_title td:nth-of-type(3){
+    padding-left: 20px;
+  }
+
+  .news_nav_wrap ul{
+    display: flex;
+  }
+
+  .news_content_box table tr:first-of-type{
+    background: #f9f9f9;
+    border-bottom: none;
+  }
+  .news_content_box table tr:last-of-type{
+    border-bottom: none;
+  }
+  .news_nav_wrap ul{
+    display: flex;
+    justify-content: center;
+  }
+  .news_table_title td:nth-of-type(1){
+    border-radius: 15px 0 0 15px;
+  }
+  .news_table_title td:nth-of-type(3){
+    border-radius: 0 15px 15px 0;
+  }
+
+  .nav_wrap{
+    display: flex;
+    justify-content: center;
+  }
+
+  .news_nav_wrap{
+    margin-top: 36px;
+    padding: 7px 0;
+    display: inline-flex;
+    border-radius: 25px;
+    box-shadow: 0px 2px 9.8px 0.2px rgb(0 0 0 / 8%);
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+  }
+  .news_nav_wrap ul li {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      border-radius: 50%;
+      color: #494949;
+      /* background: red; */
+  }
+  .news_nav_wrap ul li.news_on{
+    background:#ff953e;
+    color: white;
+  }
+  .news_nav_wrap ul li button{
+    border: 0;
+    outline: 0;
+    background: none;
+    color: #303030;
+    /* padding-right: 15px; */
+  }
+  .news_nav_wrap ul li button.next_page{
+    padding-right: 0;
+  }
+
+
+
+  /* 고객센터 */
+  .guid_txt{
+    margin-top: 110px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .qna_wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+    margin: auto;
+  }
+  .client_call_wrap,.client_email_wrap{
+    width: 415px;
+    height: 162px;
+    border-radius: 30px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+  }
+  .client_call_wrap{
+    position: relative;
+  }
+  .client_call_wrap img{
+    position: absolute;
+    top: 28%;
+    left: 65%;
+  }
+  .client_call_wrap>*{
+    margin-left: 40px;
+  }
+  .client_call_wrap h5,.client_email_wrap h5{
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 500;
+  }
+  .client_call_wrap p:first-of-type{
+    color: #6d6d6d;
+    margin: 5px 0px 0px 40px;
+  }
+  .client_call_wrap p:nth-of-type(2){
+    font-size: 37px;
+    font-weight: 500;
+  }
+  .client_email_wrap>*{
+    margin-left: 40px;
+  }
+  .client_email_wrap{
+    position: relative;
+  }
+  .client_email_wrap img{
+    position: absolute;
+    top:28%;
+    left: 65%;
+  }
+
+  .client_email_wrap h5{
+    margin-bottom: 20px;
+  }
+
+  .client_email_wrap p a{
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+
+}
