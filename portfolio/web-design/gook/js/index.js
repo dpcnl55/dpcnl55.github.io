@@ -28,6 +28,29 @@ $(document).ready(function(){
         alert("test");
     });
 
+    let count = 0;
+    $(".controler>.button_next").click(function(e){
+        e.preventDefault();
+        count++;
+        
+        if(count>2){
+            count = 2;
+        }
+        console.log(count)
+        $(".slider_box").css("transform","translateX("+(-290*count)+"px)");
+    });
+
+    $(".controler>.button_pre").click(function(e){
+        e.preventDefault();
+        count--;
+        
+        if(count<0){
+            count = 0;
+        }
+        console.log(count)
+        $(".slider_box").css("transform","translateX("+(-290*count)+"px)");
+    });
+
 
 
 });

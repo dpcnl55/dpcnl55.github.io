@@ -206,11 +206,14 @@
     margin-bottom: 72px;
   }
 
-  .slider ul{
+  .slider ul {
     display: flex;
-  }
+    transition: all 0.5s ease 0s;
+}
 
-  .slider ul li{margin-left: 42px;}
+  .slider ul li{
+    margin-left: 42px;
+  }
 
   .slider .img_box{
     width: 248px;
