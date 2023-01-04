@@ -1,0 +1,569 @@
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:inherit;}
+address,i,em{font-style:normal;}
+b,strong{font-weight:normal;}
+table{border-collapse:collapse;}
+
+/* common */
+body {
+    background: #0E0E0E;
+}
+
+.wrap {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+section {
+    font-family: 'Red Hat Display', sans-serif;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+/* layout */
+
+.introWrap {
+    background: #D2FB3F;
+    padding-bottom: 165px;
+}
+
+/* header */
+
+.allWrap .wrap header {
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    color: #0E0E0E;
+}
+
+header .gnb {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}
+
+header .gnb li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #0E0E0E;
+}
+
+/* intro titleFrame */
+
+.titleFrame {
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.twoStars {
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+.twoStars img:nth-of-type(1) {
+    margin-right: 10px;
+}
+
+.introTitle {
+    font-size: 175px;
+    font-weight: bold;
+    letter-spacing: -0.06em;
+    line-height: 175px;
+    padding-top: 140px;
+}
+
+.introDescription {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 165px;
+}
+
+.introDescription figure {
+    width: 327px;
+    height: 135px;
+    border-radius: 69px;
+    overflow: hidden;
+}
+
+/* .introDescription figure img{
+    width: 380px;
+    height: 170px;
+    border-radius: 69px;
+    object-fit: cover;
+    object-position: 30% 60%;
+    scale: 1.1;
+} */
+
+.introDescription p {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #3E3E3E;
+    line-height: 43px;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+    padding-left: 25px;
+    font-weight: 400;
+}
+
+.introText {
+    margin-top: 40px;
+}
+
+.laptop {
+    width: 380px;
+    height: 170px;
+    border-radius: 69px;
+    position: relative;
+    background-color: #0E0E0E;
+}
+
+.laptop img {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    animation-fill-mode: forwards;
+    animation-name: transY, transY2;
+    animation-iteration-count: 1, infinite;
+    animation-delay: 0s, 2s;
+    animation-duration: 2s, 2s;
+    animation-timing-function: ease-out, ease-in-out;
+}
+
+@keyframes transY {
+    0%{ 
+        transform: translateY(-240px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes transY2 {
+    0%{ 
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+/* intro Hashtags */
+
+.hashtags {
+    display: flex;
+    margin-top: 77px;
+}
+
+.hashtags li {
+    width: 296px;
+    height: 56px;
+    border: 1.5px solid #343824; 
+    border-radius: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #343824;
+    text-transform: uppercase;
+    font-weight:400;
+    letter-spacing: -0.4px;
+    margin-right: 30px;
+}
+
+.hashtagsWrap {
+    display: flex;
+}
+.hashtagsWrap figure {
+    padding-top: 91px;
+}
+
+
+/* intro 순백이그림 */
+
+.myPicture {
+    width: 100%;
+    height: 590px;
+    margin-top: 145px;
+    border: 1px solid #D2FB3F;
+    border-radius: 150px;
+    background-image: url(../img/purple.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 90%;
+    background-color: #fff;
+}
+
+
+/* About me */
+
+.black {
+    width: 100%;
+    background: #0E0E0E;
+    padding-top: 150px;
+    padding-bottom: 300px;
+}
+
+.about {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #C4C4C4;
+}
+
+.aboutTitleWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px;
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.sectionTitle h2 {
+    font-size: 128px;
+    color: #C4C4C4;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -6px;
+    line-height: 128px;
+}
+
+.sectionTitle .circle {
+    width: 30px;
+    height: 30px;
+    background: #D2FB3F;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 17px;
+    margin-left: 34px;
+}
+
+.aboutText {
+    margin-top: 50px;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+}
+
+/* about icons */
+
+.aboutIcons {
+    width: 463px;
+    height: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.aboutIcons img {
+   margin-right: 7px;
+}
+
+.aboutIcons li {
+    height: 50px;
+    border: 1px solid #C4C4C4;
+    border-radius: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+}
+
+.aboutIcons li:nth-of-type(1),.aboutIcons li:nth-of-type(2),.aboutIcons li:nth-of-type(3) {
+    width: 135px;
+}
+
+.aboutIcons li:nth-of-type(4),.aboutIcons li:nth-of-type(5) {
+    width: 215px;
+    margin-top: 10px;
+}
+
+/* about Tab style */
+
+.tab {
+    width: 100%;
+    height: 195px;
+    border-top: 1px solid #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tab.lastTab {
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 260px;
+}
+
+.tab .tabTitle {
+    width: 400px;
+    font-size: 64px;
+    letter-spacing: -0.4px;
+    font-weight: 500;
+    padding-left: 46px;
+    transition: all 0.5s ease 0s;
+}
+
+.tab.on h3.tabTitle {
+    transform: translateX(-47px);
+}
+
+.tab.on {
+    height: 220px;
+}
+
+
+.tab table,.tab p {
+    display: none;
+}
+
+.tab .listContents{
+    width: 780px;
+    /* border: 1px solid red; */
+    font-size: 20px;
+    letter-spacing: -0.3px;
+}
+
+.tab table.listContents td{
+    height: 35px;
+}
+
+
+.tab table.listContents tr td:first-of-type{
+    margin-right: 25px;
+    /* border: 1px solid yellow; */
+
+}
+
+.tab table.listContents tr td:nth-of-type(2),.listContents p {
+    font-family: 'Noto Sans Kr',sans-serif;
+    font-weight: 300;
+}
+
+.listContents {
+    line-height: 26px;
+}
+
+.listContents p:first-of-type {
+    margin-bottom: 8px;
+}
+
+
+
+/* Tab plus 버튼 */
+
+.tab .button {
+    width: 91px;
+    height: 91px;
+    background: #373831;
+    margin-right: 48px;
+    transition: all 0.3s ease 0s;
+    position:relative;
+}
+.button > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 6px;
+    height: 6px;
+    background: #C4C4C4;
+    transition: all 0.3s ease 0s;
+}
+.button > div:nth-of-type(1){width:60%;}
+.button > div:nth-of-type(2){height:60%;}
+
+.button.on > div:nth-of-type(2){opacity:0;}
+
+.tab .button:hover {
+    background: #D2FB3F;
+}
+
+/* Works style */
+
+.works {
+    color: #C4C4C4;
+}
+
+.works .worksButton {
+    margin-top: 28px;
+    margin-bottom: 115px;
+    display: flex;
+    justify-content: space-between;
+    width: 945px;
+}
+
+.works .worksButton li{
+    width: 197px;
+    height: 51px;
+    border: 1px solid #C4C4C4;
+    border-radius: 31.5px;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease 0s;
+}
+
+.works .worksButton li:hover{
+    background: #D2FB3F;
+    color: #0E0E0E;
+    font-weight: 400;
+    border: 1px solid #0E0E0E;
+}
+
+/* works gallery 사진 박스 배열*/
+
+.gallery {
+    display: flex;
+    width: 100%;
+}
+
+.boxWrap {
+    margin-right: 30px;
+}
+
+.gallery .box {
+    width: 460px;
+    height: 460px;
+    background-color: #373831;
+    margin-bottom: 23px;
+}
+
+.boxDescription {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.webBanner {
+    display: none;
+}
+
+/* works text style */
+
+.boxWrap {
+    color: #fff;
+}
+
+.boxTextWrap h4 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 29px;
+}
+
+.boxTextWrap p,.boxDescription a{
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.boxDescription span a {
+    border-bottom: 2px solid #fff;
+}
+
+/* contact */
+.contactWrap {
+    background: #D2FB3F;
+    width: 100%;
+    height: 450px;
+    border-radius: 0 0 145px 145px;
+    padding-top:60px;
+}
+
+.contactTitle {
+    display: flex;
+}
+
+.contactTitle img {
+    object-fit: contain;
+}
+
+.contactTitle img:nth-of-type(1) {
+    transform: scaleX(-1);
+}
+
+.contact h2 {
+    font-size: 128px;
+    color: #0E0E0E;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -6px;
+    line-height: 128px;
+    text-align: center;
+    padding: 0 12px;
+
+}
+
+.thanks {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    letter-spacing: -0.6px;
+}
+
+.contactText {
+    width: 490px;
+    margin: 0 auto;
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    margin-top: 82px;
+}
+
+.contactText span {
+    width: 160px;
+    display: inline-block;
+}
+
+.contactText p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #0E0E0E;
+    height: 100px;
+    color: #C4C4C4;
+}
+
+.footerText {
+    /* margin-left: 137px; */
+    font-family: 'Red Hat Text', sans-serif;
+    margin-top: 45px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footerText p:first-of-type {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 21px;
+    letter-spacing: -0.6px;
+    font-weight: 300;
+
+}
