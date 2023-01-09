@@ -1,3 +1,14 @@
+:root {
+    --main-black-color: #0e0e0e;
+    --light-grey-color: #C4C4C4;
+    --background-neon-color: #D2FB3F;
+
+    --intro-text-size:160px;
+    --section-title-h2:96px;
+    --list-title-h3:60px;
+
+}
+
 *{margin:0;padding:0;}
 ul,ol{list-style:none;}
 a{text-decoration:none;color:inherit;}
@@ -9,15 +20,13 @@ table{border-collapse:collapse;}
 /* common */
 body {
     background: #0E0E0E;
-}
-
-.wrap {
+    color: var(--main-black-color);
     font-family: 'Red Hat Text', sans-serif;
 }
 
 section {
     font-family: 'Red Hat Display', sans-serif;
-    width: 1440px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -26,14 +35,14 @@ section {
 /* layout */
 
 .introWrap {
-    background: #D2FB3F;
+    background: var(--background-neon-color);
     padding-bottom: 165px;
 }
 
 /* header */
 
-.allWrap .wrap header {
-    width: 1440px;
+header {
+    width: 1200px;
     height: 100px;
     margin: 0 auto;
     display: flex;
@@ -47,7 +56,7 @@ header .logo {
     font-size: 22px;
     font-weight: bold;
     letter-spacing: -0.03em;
-    color: #0E0E0E;
+    color: var(--main-black-color);
 }
 
 header .gnb {
@@ -81,23 +90,23 @@ header .gnb li a {
 }
 
 .introTitle {
-    font-size: 175px;
+    font-size: var(--intro-text-size);
     font-weight: bold;
     letter-spacing: -0.06em;
     line-height: 175px;
     padding-top: 140px;
 }
 
-.introDescription {
+.introDes {
     width: 327px;
     display: flex;
     flex-direction: column;
     padding-top: 165px;
 }
 
-.introDescription figure {
-    width: 327px;
-    height: 135px;
+.introDes figure {
+    width: 330px;
+    height: 130px;
     border-radius: 69px;
     overflow: hidden;
 }
@@ -111,14 +120,15 @@ header .gnb li a {
     scale: 1.1;
 } */
 
-.introDescription p {
+.introDes p {
     font-family: 'Noto Sans KR', sans-serif;
     color: #3E3E3E;
     line-height: 43px;
     letter-spacing: -0.5px;
-    font-size: 20px;
-    padding-left: 25px;
+    font-size: 18px;
+    padding-left: 23px;
     font-weight: 400;
+    display: none;
 }
 
 .introText {
@@ -126,9 +136,6 @@ header .gnb li a {
 }
 
 .laptop {
-    width: 380px;
-    height: 170px;
-    border-radius: 69px;
     position: relative;
     background-color: #0E0E0E;
 }
@@ -171,18 +178,18 @@ header .gnb li a {
 
 .hashtags {
     display: flex;
-    margin-top: 77px;
+    margin-top: 50px;
 }
 
 .hashtags li {
-    width: 296px;
+    width: 243px;
     height: 56px;
     border: 1.5px solid #343824; 
     border-radius: 31px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     color: #343824;
     text-transform: uppercase;
     font-weight:400;
@@ -194,7 +201,13 @@ header .gnb li a {
     display: flex;
 }
 .hashtagsWrap figure {
-    padding-top: 91px;
+    padding-top: 68px;
+    width: 380px;
+}
+
+.hashtagsWrap figure img {
+    width: 380px;
+    object-fit: cover;
 }
 
 
@@ -206,7 +219,7 @@ header .gnb li a {
     margin-top: 145px;
     border: 1px solid #D2FB3F;
     border-radius: 150px;
-    background-image: url(../img/purple.jpg);
+    background-image: url(../img/artwork1.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -222,12 +235,18 @@ header .gnb li a {
     width: 100%;
     background: #0E0E0E;
     padding-top: 150px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 
 .about {
     font-family: 'Red Hat Display', sans-serif;
-    color: #C4C4C4;
+    color: var(--light-grey-color);
+
+}
+
+.aboutTextWrap {
+    height: 130px;
+    padding-bottom: 0;
 }
 
 .aboutTitleWrap {
@@ -239,11 +258,31 @@ header .gnb li a {
 .sectionTitle {
     display: flex;
     align-items: flex-end;
-    
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease 0s;
 }
 
+.sectionTitle.on {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.gallery {
+    opacity: 0;
+    transition: all 2s ease 0.2s;
+    transform: translateY(50px);
+}
+
+.gallery.on {
+    opacity:1;
+    transform: translateY(0px);
+}
+
+
+
 .sectionTitle h2 {
-    font-size: 128px;
+    font-size: var(--section-title-h2);
     color: #C4C4C4;
     text-transform: uppercase;
     font-weight: bold;
@@ -252,18 +291,18 @@ header .gnb li a {
 }
 
 .sectionTitle .circle {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: #D2FB3F;
     border-radius: 50%;
     display: block;
-    margin-bottom: 17px;
+    margin-bottom: 25px;
     margin-left: 34px;
 }
 
 .aboutText {
-    margin-top: 50px;
-    font-size: 24px;
+    margin-top: 40px;
+    font-size: 22px;
     letter-spacing: -0.5px;
     font-weight: 300;
 }
@@ -277,6 +316,7 @@ header .gnb li a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 100px;
+    position: relative;
 }
 
 .aboutIcons img {
@@ -303,6 +343,37 @@ header .gnb li a {
     margin-top: 10px;
 }
 
+/* icon button text */
+
+.iconText {
+    opacity: 0;
+    position: absolute;
+    /* section .about 영역에 relative */
+    width: 200px;
+    padding: 15px;
+    border-radius: 20px;
+    background: #D2FB3F;
+    color: #181717;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .iconText img {
+    margin-bottom: 8px;
+} */
+
+.aboutIcons li:hover>div {
+    opacity: 1;
+}
+
+
+
 /* about Tab style */
 
 .tab {
@@ -312,6 +383,10 @@ header .gnb li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    padding-right: 180px;
+    box-sizing: border-box;
+    transition: all 1s ease 0s;
 }
 .tab.lastTab {
     border-bottom: 1px solid #C4C4C4;
@@ -320,31 +395,57 @@ header .gnb li a {
 
 .tab .tabTitle {
     width: 400px;
-    font-size: 64px;
+    font-size: var(--list-title-h3);
     letter-spacing: -0.4px;
     font-weight: 500;
     padding-left: 46px;
-    transition: all 0.5s ease 0s;
+    transition: all 1s ease 0s;
 }
 
 .tab.on h3.tabTitle {
     transform: translateX(-47px);
+    display: flex;
+    width: 385px;
 }
 
-.tab.on {
-    height: 220px;
+.tab.on h3::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #D2FB3F;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+    flex-shrink: 0;
+
 }
+
 
 
 .tab table,.tab p {
     display: none;
 }
 
+.tab.on {
+    height: 220px;
+}
+
+.listContents.on {
+    display: block;
+}
+
+.listContents.on p {
+    display: block;
+}
+
+
 .tab .listContents{
-    width: 780px;
-    /* border: 1px solid red; */
-    font-size: 20px;
+    width: 570px;
+    font-size: 16px;
     letter-spacing: -0.3px;
+    transition: all 0.5s ease 0s;
+
 }
 
 .tab table.listContents td{
@@ -352,10 +453,8 @@ header .gnb li a {
 }
 
 
-.tab table.listContents tr td:first-of-type{
-    margin-right: 25px;
-    /* border: 1px solid yellow; */
-
+.tab table.listContents.on tr td:nth-of-type(2){
+    padding-left: 30px;
 }
 
 .tab table.listContents tr td:nth-of-type(2),.listContents p {
@@ -375,13 +474,20 @@ header .gnb li a {
 
 /* Tab plus 버튼 */
 
+.works ul.worksButton {
+    width: 100%;
+}
+
 .tab .button {
-    width: 91px;
-    height: 91px;
+    width: 90px;
+    height: 90px;
     background: #373831;
     margin-right: 48px;
-    transition: all 0.3s ease 0s;
-    position:relative;
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .button > div {
     position: absolute;
@@ -391,8 +497,16 @@ header .gnb li a {
     width: 6px;
     height: 6px;
     background: #C4C4C4;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
+.tab.on .button > div {
+    transform: translate(-50%,-50%)rotate(45deg);
+}
+
+.tab.on .button {
+    margin-right: 0;
+}
+
 .button > div:nth-of-type(1){width:60%;}
 .button > div:nth-of-type(2){height:60%;}
 
@@ -402,6 +516,9 @@ header .gnb li a {
     background: #D2FB3F;
 }
 
+
+
+
 /* Works style */
 
 .works {
@@ -410,24 +527,31 @@ header .gnb li a {
 
 .works .worksButton {
     margin-top: 28px;
-    margin-bottom: 115px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     width: 945px;
 }
 
 .works .worksButton li{
-    width: 197px;
+    width: 18%;
     height: 51px;
     border: 1px solid #C4C4C4;
     border-radius: 31.5px;
-    font-size: 22px;
+    font-size: 1.3rem;
     letter-spacing: -0.5px;
     font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s all ease 0s;
+    transition: 0.3s all ease 0s;
+}
+
+.works .worksButton li.on {
+    background: #D2FB3F;
+    color: #0E0E0E;
+    font-weight: 400;
+    border: 1px solid #0E0E0E;
 }
 
 .works .worksButton li:hover{
@@ -439,20 +563,39 @@ header .gnb li a {
 
 /* works gallery 사진 박스 배열*/
 
-.gallery {
+
+.gallery{
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-bottom: 50px;
 }
 
+
+
 .boxWrap {
-    margin-right: 30px;
+    width: 31%;
+    margin-right: 14px;
+    margin-left: 14px;
 }
 
 .gallery .box {
-    width: 460px;
-    height: 460px;
+    height: 390px;
     background-color: #373831;
     margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery li {
+    margin-bottom: 50px;
+}
+
+.box.poscoBox {
+    background: #fff;
 }
 
 .boxDescription {
@@ -460,10 +603,22 @@ header .gnb li a {
     justify-content: space-between;
 }
 
-
-.webBanner {
-    display: none;
+.gallery .box{
+    overflow: hidden;
 }
+
+.gallery .box a img {
+    width: 395px;
+    object-fit: cover;
+}
+
+
+/* .webBanner {
+    display: none;
+} */
+/* .webBanner.on {
+    display: flex;
+} */
 
 /* works text style */
 
@@ -493,13 +648,21 @@ header .gnb li a {
 .contactWrap {
     background: #D2FB3F;
     width: 100%;
-    height: 450px;
-    border-radius: 0 0 145px 145px;
+    height: 380px;
+    border-radius: 0 0 140px 140px;
     padding-top:60px;
 }
 
+/* .contact .ContentsWrap {
+    width: 1200px;
+    border: 1px solid red;
+    margin: 0 auto;
+} */
+
 .contactTitle {
     display: flex;
+    width: 1200px;
+    justify-content: space-between;
 }
 
 .contactTitle img {
@@ -511,30 +674,29 @@ header .gnb li a {
 }
 
 .contact h2 {
-    font-size: 128px;
+    font-size: var(--section-title-h2);
     color: #0E0E0E;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: -6px;
     line-height: 128px;
     text-align: center;
-    padding: 0 12px;
-
+    margin: 0 auto;
 }
 
 .thanks {
     text-align: center;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: -0.6px;
 }
 
 .contactText {
-    width: 490px;
-    margin: 0 auto;
-    font-size: 24px;
+    width: 430px;
+    margin: 30px auto;
+    font-size: 20px;
     letter-spacing: -0.6px;
-    margin-top: 82px;
+    transform: translateX(10px);
 }
 
 .contactText span {
@@ -543,13 +705,13 @@ header .gnb li a {
 }
 
 .contactText p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer {
     background: #0E0E0E;
     height: 100px;
-    color: #C4C4C4;
+    color:var(--background-neon-color);
 }
 
 .footerText {
@@ -565,5 +727,4 @@ footer {
     line-height: 21px;
     letter-spacing: -0.6px;
     font-weight: 300;
-
 }
