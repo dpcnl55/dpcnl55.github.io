@@ -29,10 +29,10 @@ let worksList = [
     {
         "pid":3,
         "category":"banner",
-        "thumnail" : "./img/banner1.png",
-        "thumnail_desc":"헤드셋배너목업",
-        "title" : "가로 웹 배너",
-        "description" :"Redisign Project",
+        "thumnail" : "./img/popup.png",
+        "thumnail_desc":"사각형배너목업",
+        "title" : "웹 팝업",
+        "description" :"Redesign Project",
         "link":"#"
     },
     {
