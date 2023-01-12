@@ -1,0 +1,83 @@
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:inherit;}
+address,i,em{font-style:normal;}
+b,strong{font-weight:normal;}
+table{border-collapse:collapse;}
+
+:root {
+    --main-black-color: #0e0e0e;
+    --light-grey-color: #C4C4C4;
+    --background-neon-color: #D2FB3F;
+    --dark-neon-color: #A1BF31;
+
+    --h1-text-size:22px;
+    --text-size:18px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--main-black-color);
+    font-size: var(--text-size);
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 0;
+}
+
+figure img {
+    width: 100%;
+   
+}
+
+figure {
+    line-height: 0;
+    /* 이미지에도 라인하이트가 생기기때문에 없애줌 */
+}
+
+
+/* 
+header {
+    width: 1200px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    border: 1px solid red;
+    margin: 0 auto;
+} */
+
+.siteBtn {
+    background: #2e2e2e;
+    width: 115px;
+    height: 115px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 2000;
+    border-radius: 20%;
+    transition: all 0.5s ease 0s;
+}
+
+.siteBtn:hover {
+    background: #ff7a00;
+}
+
+.siteBtn:hover a {
+    color: #0e0e0e;
+}
+
+.siteBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+    width: 115px;
+    height: 115px;
+}

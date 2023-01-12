@@ -6,7 +6,7 @@ let worksList = [
         "thumnail_desc":"국순당목업이미지",
         "title" : "국순당",
         "description" :"Redesign Project / Responsive Web",
-        "link":"#"
+        "link":"./works_gook.html"
     },
     {
         "pid":1,
@@ -15,7 +15,7 @@ let worksList = [
         "thumnail_desc":"포스코건설썸네일",
         "title" : "포스코 건설",
         "description" :"Redesign Project",
-        "link":"#"
+        "link":"./works_posco.html"
     },
     {
         "pid":2,
@@ -24,7 +24,7 @@ let worksList = [
         "thumnail_desc":"헤드셋배너목업",
         "title" : "가로 웹 배너",
         "description" :"Redesign Project",
-        "link":"#"
+        "link":"./works_banner.html"
     },
     {
         "pid":3,
@@ -42,7 +42,7 @@ let worksList = [
         "thumnail_desc":"순백이목업이미지",
         "title" : "순백이의 일상생활",
         "description" :"Digital Drawing",
-        "link":"#"
+        "link":"./works_soon.html"
     },
     {
         "pid":5,
@@ -69,7 +69,7 @@ function portfolioListLoad(category) {
                                 <h4>'+worksList[i].title+'</h4> \
                                 <p>'+worksList[i].description+'</p> \
                             </div> \
-                            <span><a href="'+worksList[i].link+'">VIEW</a></span> \
+                            <span><a href="'+worksList[i].link+'" target="_blank">VIEW</a></span> \
                         </div> \
                     </li>' ;
             tags += temp;
@@ -91,6 +91,8 @@ $(document).ready(function(){
             $(this).parent(".tab").children(".listContents").addClass("on");
         }
     });
+    
+
 
     $(".cat_btn").click(function(){
         let category = $(this).attr("data");
@@ -117,6 +119,7 @@ $(document).ready(function(){
     $("#btn3").click(function(){
         let worksOffset = $(".works").offset();
         $("html").animate({scrollTop:worksOffset.top},900);
+      
     });
 
     $("#btn4").click(function(){
@@ -132,12 +135,21 @@ $(document).ready(function(){
         $(".sectionTitle,.gallery").each(function(){
             if(scrollTop+windowHeight>$(this).offset().top){
                 $(this).addClass("on")
+                
             }else{
                 $(this).removeClass("on");
             }
         });
-
     });
 
+    // $(".workViewBtn").click(function(){
+    //     let pid = $(this).attr("pid");
+    //     $(".work_popup").addClass("on");
+    //     $("body").addClass("scrollOff");
+    // });
+    // $(".popup_close_btn").click(function(){
+    //     $(".work_popup").removeClass("on");
+    //     $("body").removeClass("scrollOff");
+    // });
 
 });

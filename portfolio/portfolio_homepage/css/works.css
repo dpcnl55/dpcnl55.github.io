@@ -1,0 +1,159 @@
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:inherit;}
+address,i,em{font-style:normal;}
+b,strong{font-weight:normal;}
+table{border-collapse:collapse;}
+
+:root {
+    --main-black-color: #0e0e0e;
+    --light-grey-color: #C4C4C4;
+    --background-neon-color: #D2FB3F;
+    --dark-neon-color: #A1BF31;
+
+    --h1-text-size:22px;
+    --text-size:18px;
+}
+
+body {
+    background: var(--background-neon-color);
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--main-black-color);
+    font-size: var(--text-size);
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.allWrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 1px solid var(--dark-neon-color);
+    display: flex;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+}
+
+.title {
+    width: 100%;
+    height: 150px;
+    font-size: var(--h1-text-size);
+    border-bottom: 1px solid var(--dark-neon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-weight: bold;
+}
+
+.contentsDes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.contentsTitle {
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.description {
+    width: 543px;
+}
+
+.description p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+.contentsPhotos img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.photos_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.photos_wrap .contentsPhotos {
+    width: 48.5%;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.photos_wrap .contentsPhotos img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+
+
+/* posco건설 */
+
+.contentsPhotos.poscoLast {
+    background: #eeeeee;
+}
+
+.contentsPhotos.poscoLast img{
+    width: 100%;
+    height: 3000px;
+    /* background: #EEEEEE; */
+    object-fit: contain;
+    object-position: 50% 0;
+}
+
+.contentsPhotos.poscoImg img {
+    width: 100%;
+    object-fit: contain;
+    background: #e0e0e0;
+}
+
+.contentsPhotos.posco img {
+    width: 100%;
+    object-fit: contain;
+    background: #fff;
+}
+
+/* banner가로형 */
+
+.banner .contentsPhotos img{
+    object-fit: contain;
+    margin-bottom: 0;
+    width: 1200px;
+}
+
+.banner .contentsPhotos {
+    display: flex;
+    justify-content: center;
+    align-items: ceneter;
+    background: #eeeeee;
+    margin-bottom: 30px;
+}
+
+.banner .contentsPhotos.narangdMockup {
+    background: #e0e0e0;
+}
+
+.banner header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
