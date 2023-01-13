@@ -422,6 +422,10 @@
     width: 100%;
   }
 
+  .mo_gnb .mo_list{
+    display: none;
+  }
+
   /* 상단 공통 타이틀 */
 
   /* 상단 타이틀 */
