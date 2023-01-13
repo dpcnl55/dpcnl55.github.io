@@ -440,11 +440,12 @@
   }
 
   .corp_nav ul li,.story_nav ul li,.ind_pro_nav ul li{
-    padding-right: 24px;
+    padding-left: 24px;
   }
   .content_summary br{display: none;}
 
   .page_title h3{
+    padding-left: 24px;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 40px;
