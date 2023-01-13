@@ -62,7 +62,7 @@ function portfolioListLoad(category) {
         {    
             var temp ='<li class="boxWrap"> \
                         <div class="box">\
-                            <a href="./sub.html?pid='+worksList[i].pid+'"><img src="'+ worksList[i].thumnail+'" alt="'+worksList[i].thumnail_desc+'"></a> \
+                            <a href="'+worksList[i].link+'" target="_blank"><img src="'+ worksList[i].thumnail+'" alt="'+worksList[i].thumnail_desc+'"></a> \
                         </div> \
                         <div class="boxDescription"> \
                             <div class="boxTextWrap"> \
