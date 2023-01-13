@@ -51,7 +51,7 @@ let worksList = [
         "thumnail_desc":"일러스트레이션이미지",
         "title" : "커플 일러스트",
         "description" :"Digital Drawing",
-        "link":"#"
+        "link":"./works_illust.html"
     },
 ];
 
