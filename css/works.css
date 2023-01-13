@@ -174,7 +174,6 @@ header {
 .allWrap .contentsPhotos.popupBox.devided {
     display: flex;
     justify-content: space-between;
-    border: 2px solid orange;
 }
 
 .allWrap .contentsPhotos.popupBox.devided img {
