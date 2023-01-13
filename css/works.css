@@ -162,12 +162,12 @@ header {
 
 .allWrap .contentsPhotos.popupBox{
     background: transparent;
-    height: 800px;
+    height: 700px;
     
 } 
 .allWrap .contentsPhotos.popupBox img{
     width: 100%;
-    height: 800px;
+    height: 700px;
     object-fit: cover;
 } 
 
@@ -177,14 +177,14 @@ header {
 }
 
 .allWrap .contentsPhotos.popupBox.devided img {
-    width: 50%;
+    width: 49%;
 }
 
-.allWrap .contentsPhotos.popupBox.black_friday {
+.allWrap .contentsPhotos.popupBox {
     background: #dedede;
 }
 
-.allWrap .contentsPhotos.popupBox.black_friday img{
+.allWrap .contentsPhotos.popupBox img{
     object-fit: contain;
 
 }
