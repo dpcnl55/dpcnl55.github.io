@@ -207,3 +207,10 @@ header {
     border: 1px solid green;
 }  */
 
+/* 일러스트 상세페이지 */
+
+.allWrap header .illustHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
