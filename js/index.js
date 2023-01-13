@@ -33,7 +33,7 @@ let worksList = [
         "thumnail_desc":"사각형배너목업",
         "title" : "웹 팝업",
         "description" :"Redesign Project",
-        "link":"#"
+        "link":"./works_popup.html"
     },
     {
         "pid":4,
