@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="pc_header">
@@ -49,33 +51,36 @@
     <div class="mo_wrap">
       <div class="mobile_header">
         <div class="logo">
-          <a href="#"><img src="./img/logo.jpg" alt="국순당로고"></a>
+          <a href="./index.html"><img src="./img/logo.jpg" alt="국순당로고"></a>
         </div>
         <div class="btnMobile">
           <img src="./img/hamburger.png" alt="메뉴버튼">
         </div>
       </div>
 
+      <div class="mo_back">
+      </div>
+
       <div class="mo_gnb">
         <div class="mo_gnb_header">
-          <a href="#"><img src="./img/logo.jpg" alt="국순당로고"></a>
+          <a href="./index.html"><img src="./img/logo.jpg" alt="국순당로고"></a>
           <img src="./img/x_icon.png" alt="닫기버튼">
         </div>
         <ul class="mo_list">
-          <li class="on"><a href="./company.html">회사소개</a>
-            <ul class="on">
+          <li><a href="#">회사소개</a>
+            <ul>
               <li><a href="./company.html">기업이념</a></li>
               <li><a href="#">녹색기업</a></li>
               <li><a href="#">회사위치</a></li>
             </ul>
           </li>
-          <li><a href="./product.html">제품소개</a>
+          <li><a href="#">제품소개</a>
             <ul>
               <li><a href="./product.html">백세주 브랜드 스토리</a></li>
               <li><a href="./product.html">국순당 제품 소개</a></li>
             </ul>
           </li>
-          <li><a href="./story.html">우리술 이야기</a>
+          <li><a href="#">우리술 이야기</a>
             <ul>
               <li><a href="./story.html">우리술 복원사업</a></li>
               <li><a href="./story.html">복원한 우리술</a></li>
@@ -139,65 +144,65 @@
         </div>
 
         <div class="scroll_wrap">
-          <div class="scroll_left">
+          <div class="scroll_left" id="drinkBox">
             <h2>국순당이 복원한 우리술</h2>
-            <p>이화주</p>
+            <p id="scroll_name">이화주</p>
           </div>
-          <div class="scroll_right">
-            <ul class="scroll_list">
-              <li>
+          <div class="scroll_right swiper">
+            <ul class="scroll_list swiper-wrapper">
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">1992 09<b>'</b> <span>백세주</span></h4>
                 <p>고려시대 명주 ‘백하주’의 생쌀발효법을 복원하여 빚은<br>
                    우리 술 대표 브랜드</p>
                 <p>고사촬요에 의거하여 복원</p>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">2008 05<b>'</b> <span>창포주</span></h4>
                 <p>단오의 세시풍속과 함께 했던 우리술</p>
                 <p>주찬(1800년대)에 의거하여 복원</p>
               </li>
-              <li class="scroll_on">
-                <h4 class="scroll_list_tit_on">2008 08<b>'</b> <span>이화주</span></h4>
+              <li class="swiper-slide">
+                <h4 class="scroll_list_tit">2008 08<b>'</b> <span>이화주</span></h4>
                 <p>고려시대 이화주의 농후한 맛을 되살린 최고급 탁주</p>
                 <p>수운잡방(1500년대) 등의 기록에 의거하여 복원</p>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">2008 10<b>'</b> <span>신도주</span></h4>
                 <p>그 해에 첫 수확한 햅쌀로 빚는 술</p>
                 <p>양주방에 의거하여 복원</p>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">2009 02<b>'</b> <span>송절주</span></h4>
                 <p>소나무 마디인 송절로 빚은 조선시대 명주</p>
                 <p>규합총서에 의거하여 복원</p>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">2009 08<b>'</b> <span>미림주</span></h4>
-                <p>조선시대 천연 감미 소주로 맛이 부드러워 사대부 부녀자들도 즐겨 마셨던 술</p>
+                <p>조선시대 천연 감미 소주로 맛이 부드러워 <br>사대부 부녀자들도 즐겨 마셨던 술</p>
                 <p>임원경제지(1827년경)에 의거하여 복원</p>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">2009 10<b>'</b> <span>상심주</span></h4>
                 <p>오디향 진한 약주의 느낌의 조선시대 약용주</p>
                 <p>본초강목, 동의보감에 의거하여 복원</p>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">2011 07<b>'</b> <span>한산춘</span></h4>
                 <p>발효주와 증류주를 섞은 조선시대 대표적 혼양주</p>
                 <p>규합총서(1809년)에 의거하여 복원</p>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <h4 class="scroll_list_tit">2013 03<b>'</b> <span>삼합주</span></h4>
                 <p>오랜 시간과 정성이 있어야 맛볼 수 있는 깊고 깨끗한 맛의 우리술</p>
                 <p>조선시대 후기 조리서 주찬(1800년대)에 의거하여 복원</p>
               </li>
             </ul>
             <ul class="story_controler">
-              <li>1</li>
+              <!-- <li>1</li>
               <li>2</li>
               <li class="on">3</li>
               <li>4</li>
-              <li>5</li>
+              <li>5</li> -->
             </ul>
           </div>
         </div>

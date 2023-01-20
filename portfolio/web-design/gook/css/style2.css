@@ -30,36 +30,97 @@
     margin-left: 43px;
   }
 
-
+  /* 모바일 탭메뉴 */
 
   .btnMobile {
     margin-right: 43px;
     margin-top: 5px;
   }
 
-  .mo_gnb {
-    width: 65%;
-    height: 100vh;
-    background: #ececec;
-    position: absolute;
+  .mo_back {
+    display: none;
+    background: #191919;
+    opacity: 0.3;
+    position: fixed;
     top: 0;
-    right: -65%;
-    z-index: 100;
-    border-radius: 30px 0 0 30px;
-    transition: all 1s ease 0s;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
   }
 
-  .mo_gnb_header {
+  .mo_gnb {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80%;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 40px 0 0 40px;
+    transition: all 1s ease 0s;
+    transform: translateX(100%);
+  }
+
+
+  .mo_gnb .mo_gnb_header {
     display: flex;
     justify-content: space-between;
-    padding: 30px 36px;
+    margin: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 10px;
   }
 
-  .main_banner {
-    border: 1px solid red;
-    width: 100%;
-    height: 1020px;
+  .mo_list {
+    background: #fff;
+    font-size: 23px;
   }
+  .mo_list>li {
+    border-bottom: 2px solid #efefef;
+  }
+
+  .mo_list>li>a {
+    display: block;
+    padding: 20px;
+    padding-left: 30px;
+    font-weight: 600;
+  }
+
+  .mo_list ul {
+    background: f8f9fb;
+    display: none;
+    
+  }
+
+
+
+  .mo_list ul li{
+    padding: 20px;
+    line-height: 100%;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    background: #f9f9f9;
+  }
+
+
+
+
+  /* 모바일 배너 */
+  .main_banner {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/mobile_banner1.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: 60% 20%;
+  }
+
+  .main_banner img {
+    display: none;
+  }
+
 
   /* content summary */
 
@@ -97,7 +158,7 @@
   }
 
   .content_summary ul li h3 {
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-right: 50px;
     width: 120px;
@@ -120,39 +181,17 @@
     margin-bottom: 0;
     padding: 0;
     display: flex;
+
   }
 
-  .mo_list  li {
-    border-bottom: 2px solid #efefef;
-    height: 85px;
-    width: 95%;
-    margin-left: 5%;
-    display: flex;
-    align-items: center;
-    position: relative;
+  .content_summary ul li .container_box {
+    font-size: 1.4rem;
   }
-
-  .mo_list>li>a {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .mo_list>li>ul{
-    display: none;
-  }
-
-  .mo_list>li>.on {
-    display: block;
-    background: #f8f9fb;
-    width: 100%;
-    position: absolute;
-    top: 85px;
-    left: 0;
-  }
-
+  
   /* 제품 슬라이더 */
 
   .slider .sec_title{
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
@@ -186,7 +225,6 @@
 
   .slider .station {
     width: 93%;
-    height: 658px;
     overflow: hidden;
   }
 
@@ -205,6 +243,12 @@
     margin-top: 10px;
   }
 
+  .slider_box li .img_box img {
+    width: 150px;
+    height: 370px;
+    object-fit: contain;
+  }
+
   .controler{
     left: 50%; top:50%;
     position: absolute;
@@ -220,10 +264,10 @@
   .box{
     width: 90vw;
     border-radius: 40px;
-    height: 60vh;
+    height: 70vh;
     margin-top: 190px;
     margin: auto;
-    background: url(../img/main_box1.png) no-repeat 0px 0px;
+    background: url(../img/main_box1.png) no-repeat 50% 50%;
     background-size: cover;
     margin-bottom: 244px;
   }
@@ -231,7 +275,7 @@
   .color_box{
     background-color: rgba(0,0,0,0.4);
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     border-radius: 40px;
     color: #fff;
     position: relative;
@@ -239,9 +283,10 @@
 
   .color_txt_box{
     position: absolute;
-    top: 60%;
+    top: 62%;
     left: 10%;
     font-size: 1.3rem;
+    width: 70vw;
   }
 
   .box .color_box h3,.qna_box_wrap h3{
@@ -257,6 +302,18 @@
     margin-bottom: 10px;
     word-break: keep-all;
     z-index: 10;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .box a {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .box p br {
+    display: none;
   }
 
   /* 메인 - 고객 문의 및 불편사항 */
@@ -270,7 +327,7 @@
   .qna_box_wrap h3{
     text-align: center;
     margin-bottom: 35px;
-    font-size: 36px;
+    font-size: 2rem;
   }
 
   .qna_box{
@@ -298,24 +355,35 @@
   }
   .email_box,.phone_box{
     position: relative;
-    width: 90%;
+    width: 85%;
     height: 220px;
     padding: 30px 45px;
     border-radius: 30px;
     background: #fefcf5;
     margin-bottom: 30px;
+    
   }
   .email_box{
     background-image: url(../img/letter.png);
     background-repeat: no-repeat;
     background-position: 95% 100px;
+    background-size: 35%;
   }
+
+  .email_box br {
+    display: none;
+  }
+
   .phone_box{
     background-image: url(../img/phone.png);
     background-repeat: no-repeat;
     background-position: 95% 100px;
+    background-size: 32%;
   }
+
+
   .counsel_box p{
+    width: 90%;
     font-weight: 400;
     font-size: 14px;
   }
@@ -324,7 +392,7 @@
     position: absolute;
     background: #a3a09f;
     color: #fff;
-    bottom: 50px;
+    bottom: 40px;
     left: 45px;
     width: 160px;
     height: 43px;
@@ -422,9 +490,6 @@
     width: 100%;
   }
 
-  .mo_gnb .mo_list{
-    display: none;
-  }
 
   /* 상단 공통 타이틀 */
 
@@ -595,10 +660,6 @@
 
   /* 개별 제품소개 페이지 */
 
-
-  .ind_slider_wrap {
-   
-  }
 
   .ind_slider_wrap .slider_box_wrap {
     width: 90%;
