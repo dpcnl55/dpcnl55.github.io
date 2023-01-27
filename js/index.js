@@ -142,14 +142,14 @@ $(document).ready(function(){
         });
     });
 
-    // $(".workViewBtn").click(function(){
-    //     let pid = $(this).attr("pid");
-    //     $(".work_popup").addClass("on");
-    //     $("body").addClass("scrollOff");
-    // });
-    // $(".popup_close_btn").click(function(){
-    //     $(".work_popup").removeClass("on");
-    //     $("body").removeClass("scrollOff");
-    // });
+    $(".workViewBtn").click(function(){
+        let pid = $(this).attr("pid");
+        $(".work_popup").addClass("on");
+        $("body").addClass("scrollOff");
+    });
+    $(".popup_close_btn").click(function(){
+        $(".work_popup").removeClass("on");
+        $("body").removeClass("scrollOff");
+    });
 
 });
