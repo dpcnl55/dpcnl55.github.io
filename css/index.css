@@ -108,6 +108,7 @@
         height: 130px;
         border-radius: 69px;
         overflow: hidden;
+        z-index: 1;
     }
     
     /* .introDescription figure img{
