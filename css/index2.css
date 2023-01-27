@@ -42,6 +42,7 @@ section {
 /* header */
 
 header {
+    background: var(--background-neon-color);
     width: 90%;
     margin: 0 auto;
 }
