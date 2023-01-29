@@ -88,8 +88,8 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .photos_wrap .contentsPhotos {
@@ -121,15 +121,19 @@ header {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin-top:30px;
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .photo-col2 {
-        height: 90%;
-        width: 90%;
+        height: 100%;
+        width: 100%;
         margin-bottom: 30px;
         margin-bottom: 30px;
     }
+    .photos_wrap .contentsPhotos {
+        margin-inline: 0px;
+    }
+    
 }
 
 .photos_wrap .contentsPhotos img{
