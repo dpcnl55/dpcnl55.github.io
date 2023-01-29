@@ -27,11 +27,11 @@ body {
 
 .allWrap {
     /* width: 90%; */
-    min-width: 900px;
+    min-width: 300px;
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header {
@@ -61,6 +61,7 @@ header {
 
 .contentsDes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -69,6 +70,7 @@ header {
 .contentsTitle {
     font-weight: 500;
     margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .description {
@@ -79,152 +81,73 @@ header {
     margin-bottom: 20px;
 }
 
-.contentsPhotos img {
-    width: 100%;
-    min-width: 900px;
-    object-fit: cover;
-    margin-bottom: 30px;
-}
 
 .photos_wrap {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    height: 600px;
-    min-width: 900px;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .photos_wrap .contentsPhotos {
-    width: 48.5%;
-    height: 500px;
-    margin-bottom: 30px;
-    margin-bottom: 30px;
+    margin-inline: 10px;
+}
+
+.photo-col2 {
+    height: 580px;
+    width: 580px;
+}
+.photo-col1 {
+    width: 100%;
+}
+
+
+.photos_wrap_bg_e0e0e0 {
+    background-color: #e0e0e0;
+}
+
+.photos_wrap_bg_afafac {
+    background-color: #afafac;
+}
+
+
+@media (max-width:1200px) {
+    .photos_wrap {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top:30px;
+        margin-bottom: 30px;
+    }
+    .photo-col2 {
+        height: 90%;
+        width: 90%;
+        margin-bottom: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .photos_wrap .contentsPhotos img{
+    height: 100%;
     width: 100%;
-    min-width: 400px;
-    height: 600px;
     object-fit: cover;
-    margin-bottom: 30px;
 }
 
-
-
-/* posco건설 */
-
-.contentsPhotos.poscoLast {
-    background: #eeeeee;
-}
-
-.contentsPhotos.poscoLast img{
-    width: 100%;
-    height: 3000px;
-    /* background: #EEEEEE; */
-    object-fit: contain;
-    object-position: 50% 0;
-}
-
-.contentsPhotos.poscoImg img {
-    width: 100%;
-    object-fit: contain;
-    background: #e0e0e0;
-}
-
-.contentsPhotos.posco img {
-    width: 100%;
-    object-fit: contain;
-    background: #fff;
-}
-
-/* banner가로형 */
-
-.banner .contentsPhotos img{
-    object-fit: contain;
-    margin-bottom: 0;
-    /* width: 1200px; */
-}
-
-.banner .contentsPhotos {
+.allWrap header ul {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.allWrap .works {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: ceneter;
-    background: #eeeeee;
-    margin-bottom: 30px;
-}
-
-.banner .contentsPhotos.narangdMockup {
-    background: #e0e0e0;
-}
-
-.banner header ul{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* 팝업 상세페이지 스타일 */
-
-.allWrap .contentsPhotos.popupBox{
-    background: transparent;
-    height: 750px;
-    
-} 
-.allWrap .contentsPhotos.popupBox img{
-    width: 100%;
-    min-width: 500px;
-    min-height: 400px;
-    height: 750px;
-    object-fit: cover;
-} 
-
-.allWrap .contentsPhotos.popupBox.devided {
-    display: flex;
-    justify-content: space-between;
-    min-width: 900px;
-}
-
-.allWrap .contentsPhotos.popupBox.devided img {
-    min-width: 400px;
-}
-
-.allWrap .contentsPhotos.popupBox.first{
-    background: #afafac;
-    margin-top: 30px;
-}
-
-.allWrap .contentsPhotos.popupBox.black_friday {
-    background: #e0e0e0;
-}
-
-.allWrap .contentsPhotos.popupBox img{
-    object-fit: contain;
-
-}
-
-
-
-/* .contentsPhotos.popupBox img:nth-of-type(2){
-   object-fit: cover;
-   height: 800px;
-   position: relative;
-   overflow: hidden;
-}
-
-.contentsPhotos.popupBox .mockupleft{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    object-fit: cover;
-    border: 1px solid green;
-}  */
-
-/* 일러스트 상세페이지 */
-
-.allWrap header .illustHeader {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    align-items: center;
 }
