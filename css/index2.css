@@ -401,8 +401,10 @@ header .logo {
 }
 
 .works .worksButton li{
-    width: 18%;
+    width: 20%;
     height: 51px;
+    padding-right: 5px;
+    padding-left: 5px;
     border: 1px solid #C4C4C4;
     border-radius: 31.5px;
     font-size: 1.0rem;
