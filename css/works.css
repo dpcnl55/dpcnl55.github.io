@@ -103,7 +103,9 @@ header {
 .photo-col1 {
     width: 100%;
 }
-
+.photo-portrait {
+    height: 90vh;
+}
 
 .photos_wrap_bg_e0e0e0 {
     background-color: #e0e0e0;
