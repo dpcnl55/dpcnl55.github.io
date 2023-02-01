@@ -54,12 +54,15 @@ $(document).ready(function(){
     $(".controler>.button_next").click(function(e){
         e.preventDefault();
         count++;
-        
         if(count>slides-1){
             count = slides-1;
         }
+        if(count>slides - perView) {
+            count = slides - perView ;
+            return;
+        }
         console.log(count)
-        $(".slider_box").css("transform","translateX("+(-(100/6)*count)+"%)");
+        $(".slider_box").css("transform","translateX("+(-(100/slides)*count)+"%)");
     });
 
     $(".controler>.button_pre").click(function(e){
@@ -69,8 +72,9 @@ $(document).ready(function(){
         if(count<0){
             count = 0;
         }
+     
         console.log(count)
-        $(".slider_box").css("transform","translateX("+(-(100/6)*count)+"%)");
+        $(".slider_box").css("transform","translateX("+(-(100/slides)*count)+"%)");
     });
 
     $(".mo_list li").click(function(){
@@ -106,7 +110,8 @@ $(document).ready(function(){
             delay: 5000,
         }
       });
-
+    
+      
     console.log(drinkListSlider.realIndex)
 
     
