@@ -1,6 +1,15 @@
 let worksList = [
-    {   
+    {
         "pid":0,
+        "category":"web_design",
+        "thumnail" : "./img/erp-thum.png",
+        "thumnail_desc":"ERP UI/UX 디자인",
+        "title" : "ERP UI/UX 디자인",
+        "description" :"UI/UX Design",
+        "link":"./works_erp.html"
+    },
+    {   
+        "pid":1,
         "category":"web_design",
         "thumnail" : "./img/gook_mockup1.png",
         "thumnail_desc":"국순당목업이미지",
@@ -53,6 +62,7 @@ let worksList = [
         "description" :"Digital Drawing",
         "link":"./works_illust.html"
     },
+
 ];
 
 function portfolioListLoad(category) {
