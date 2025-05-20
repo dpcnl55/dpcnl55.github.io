@@ -9,8 +9,8 @@ table{border-collapse:collapse;}
 :root {
     --main-black-color: #0e0e0e;
     --light-grey-color: #C4C4C4;
-    --background-neon-color: #D2FB3F;
-    --dark-neon-color: #A1BF31;
+    --background-neon-color: #ffffff;
+    --dark-neon-color: #e5e5e5;
 
     --h1-text-size:22px;
     --text-size:18px;
